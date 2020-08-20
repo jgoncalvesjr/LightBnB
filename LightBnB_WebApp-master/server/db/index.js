@@ -1,4 +1,4 @@
-const properties = require('./json/properties.json');
+// const properties = require('../json/properties.json');
 const { Pool } = require('pg');
 
 const pool = new Pool({
@@ -164,7 +164,7 @@ const getAllProperties = function(options, limit = 10) {
   `;
 
   // 5
-  console.log(queryString, queryParams);
+  // console.log(queryString, queryParams);
 
   // 6
   return pool.query(queryString, queryParams)
